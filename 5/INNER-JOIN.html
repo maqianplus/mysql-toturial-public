@@ -1,0 +1,805 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>INNER JOIN · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="LEFT-JOIN.html" />
+    
+    
+    <link rel="prev" href="JOIN.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1/">
+            
+                <a href="../1/">
+            
+                    
+                    Section 1. Getting started with MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1/INSTALL.html">
+            
+                <a href="../1/INSTALL.html">
+            
+                    
+                    Installing MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1/SAMPLE-DATABASE.html">
+            
+                <a href="../1/SAMPLE-DATABASE.html">
+            
+                    
+                    Downloading sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1/LOAD-DATABASE.html">
+            
+                <a href="../1/LOAD-DATABASE.html">
+            
+                    
+                    Loading the sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2/">
+            
+                <a href="../2/">
+            
+                    
+                    Section 2. Querying data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2/MySQL-SELECT.html">
+            
+                <a href="../2/MySQL-SELECT.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3/">
+            
+                <a href="../3/">
+            
+                    
+                    Section 3. Sorting data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3/ORDER-BY.html">
+            
+                <a href="../3/ORDER-BY.html">
+            
+                    
+                    ORDER BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4/">
+            
+                <a href="../4/">
+            
+                    
+                    Section 4. Filtering data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4/WHERE.html">
+            
+                <a href="../4/WHERE.html">
+            
+                    
+                    WHERE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4/SELECT-DISTINCT.html">
+            
+                <a href="../4/SELECT-DISTINCT.html">
+            
+                    
+                    SELECT DISTINCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4/AND-Operator.html">
+            
+                <a href="../4/AND-Operator.html">
+            
+                    
+                    AND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4/OR-Operator.html">
+            
+                <a href="../4/OR-Operator.html">
+            
+                    
+                    OR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4/IN-Operator.html">
+            
+                <a href="../4/IN-Operator.html">
+            
+                    
+                    IN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4/BETWEEN.html">
+            
+                <a href="../4/BETWEEN.html">
+            
+                    
+                    BETWEEN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4/LIMIT.html">
+            
+                <a href="../4/LIMIT.html">
+            
+                    
+                    LIMIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../4/IS-NULL.html">
+            
+                <a href="../4/IS-NULL.html">
+            
+                    
+                    IS NULL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Section 5. Joining tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ALIAS.html">
+            
+                <a href="ALIAS.html">
+            
+                    
+                    Table & Column Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="JOIN.html">
+            
+                <a href="JOIN.html">
+            
+                    
+                    Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="INNER-JOIN.html">
+            
+                <a href="INNER-JOIN.html">
+            
+                    
+                    INNER JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="LEFT-JOIN.html">
+            
+                <a href="LEFT-JOIN.html">
+            
+                    
+                    LEFT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="RIGHT-JOIN.html">
+            
+                <a href="RIGHT-JOIN.html">
+            
+                    
+                    RIGHT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="CROSS-JOIN.html">
+            
+                <a href="CROSS-JOIN.html">
+            
+                    
+                    CROSS JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="SELF-JOIN.html">
+            
+                <a href="SELF-JOIN.html">
+            
+                    
+                    SELF JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6/">
+            
+                <a href="../6/">
+            
+                    
+                    Section 6. Grouping data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6/GROUP-BY.html">
+            
+                <a href="../6/GROUP-BY.html">
+            
+                    
+                    GROUP BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6/HAVING.html">
+            
+                <a href="../6/HAVING.html">
+            
+                    
+                    HAVING
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6/ROLLUP.html">
+            
+                <a href="../6/ROLLUP.html">
+            
+                    
+                    ROLLUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >INNER JOIN</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mysql-inner-join">MySQL INNER JOIN</h1>
+<p><strong>Summary</strong>: in this tutorial, you will learn how to use the MySQL <code>INNER JOIN</code> clause to select data from multiple tables based on join conditions.</p>
+<h2 id="introduction-to-mysql-inner-join-clause">Introduction to MySQL <code>INNER JOIN</code> clause</h2>
+<p>The <code>INNER JOIN</code> matches each row in one table with every row in other tables and allows you to query rows that contain columns from both tables.</p>
+<p>The <code>INNER JOIN</code> is an optional clause of the <a href="http://www.mysqltutorial.org/mysql-select-statement-query-data.aspx" target="_blank"><code>SELECT</code></a> statement. It appears immediately after the <code>FROM</code>clause. Here is the syntax of the <code>INNER JOIN</code> clause:</p>
+<pre><code class="lang-mysql">SELECT
+    select_list
+FROM t1
+INNER JOIN t2 ON join_condition1
+INNER JOIN t3 ON join_condition2
+...;
+</code></pre>
+<p>In this syntax:</p>
+<ul>
+<li>First, specify the main table that appears in the <code>FROM</code> clause (<code>t1</code>).</li>
+<li>Second, specify the table that will be joined with the main table, which appears in the <code>INNER JOIN</code>clause (<code>t2</code>, <code>t3</code>,&#x2026;).</li>
+<li>Third, specify a join condition after the <code>ON</code> keyword of the <code>INNER JOIN</code> clause. The join condition specifies the rule for matching rows between the main table and the table appeared in the <code>INNER JOIN</code> clause.</li>
+</ul>
+<p>Assuming that you want to join two tables <code>t1</code> and <code>t2</code>.</p>
+<p>The following statement illustrates how to join two tables <code>t1</code> and <code>t2</code> using the <code>INNER JOIN</code> clause:</p>
+<pre><code class="lang-mysql">SELECT 
+     select_list
+FROM 
+     t1
+INNER JOIN t2 ON join_condition;
+</code></pre>
+<p>The <code>INNER JOIN</code> clause compares each row in the <code>t1</code> table with every row in the <code>t2</code> table based on the join condition.</p>
+<p>If rows from both tables cause the join condition to evaluate to <code>TRUE</code>, the <code>INNER JOIN</code> creates a new row whose columns contain all columns of rows from the tables and includes this new row in the result set. Otherwise, the <code>INNER JOIN</code> just ignores the rows.</p>
+<p>In case no row between tables causes the join condition to evaluate to <code>TRUE</code>, the <code>INNER JOIN</code> returns an empty result set. This logic is also applied when you join more than 2 tables.</p>
+<p>The following Venn diagram illustrates how the <code>INNER JOIN</code> clause works:</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-INNER-JOIN-Venn-Diagram-300x166.png" alt="MySQL INNER JOIN Venn Diagram"></p>
+<h2 id="mysql-inner-join-examples">MySQL <code>INNER JOIN</code> examples</h2>
+<p>Let&#x2019;s look at the <code>products</code> and <code>productlines</code> tables in the <a href="http://www.mysqltutorial.org/mysql-sample-database.aspx" target="_blank">sample database</a>.</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/products-productlines-tables.png" alt="products productlines tables"></p>
+<p>In this diagram, the table <code>products</code> has the column <code>productLine</code> that references the column  <code>productline</code>of the table <code>productlines</code> . The column <code>productLine</code> in the table <code>products</code> is called the <a href="http://www.mysqltutorial.org/mysql-foreign-key/" target="_blank">foreign key</a> column.</p>
+<p>Typically, you join tables that have foreign key relationships like the  <code>productlines</code> and <code>products</code> tables.</p>
+<p>Suppose you want to get:</p>
+<ul>
+<li>The <code>productCode</code> and <code>productName</code> from the <code>products</code> table.</li>
+<li>The <code>textDescription</code> of product lines from the <code>productlines</code> table<em>.</em></li>
+</ul>
+<p>To do this, you need to select data from both tables by matching rows based on values in the <code>productline</code> column using the <code>INNER JOIN</code> clause as follows:</p>
+<pre><code class="lang-mysql">SELECT 
+    productCode, 
+    productName, 
+    textDescription
+FROM
+    products t1
+INNER JOIN productlines t2 
+    ON t1.productline = t2.productline;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-inner-join/#1" target="_blank">Try It Out</a></p>
+<h3 id=""><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-INNER-JOIN-Products-Data-Example.jpg" alt="MySQL INNER JOIN - Products Data Example"></h3>
+<p>Because the joined columns of both tables have the same name  <code>productline</code>, you can use the <code>USING</code>syntax:</p>
+<pre><code class="lang-mysql">SELECT 
+    productCode, 
+    productName, 
+    textDescription
+FROM
+    products
+INNER JOIN productlines USING (productline);
+</code></pre>
+<p>The query returns the same result set. However, the <code>USING</code> syntax is much shorter and cleaner.</p>
+<h3 id="mysql-inner-join-with-group-by-clause-example">MySQL <code>INNER JOIN</code> with <code>GROUP BY</code> clause example</h3>
+<p>See the following <code>orders</code> and <code>orderdetails</code> tables:</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/orders-orderdetails-table.png" alt="orders orderdetails table"></p>
+<p>This query returns order number, order status and total sales from the <code>orders</code> and <code>orderdetails</code> tables using the <code>INNER JOIN</code> clause with the <code>GROUP BY</code>clause:</p>
+<pre><code class="lang-mysql">SELECT 
+    t1.orderNumber,
+    t1.status,
+    SUM(quantityOrdered * priceEach) total
+FROM
+    orders t1
+INNER JOIN orderdetails t2 
+    ON t1.orderNumber = t2.orderNumber
+GROUP BY orderNumber;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-inner-join/#2" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MysQL-INNER-JOIN-with-GROUP-BY-clause.jpg" alt="MysQL INNER JOIN with GROUP BY clause"></p>
+<p>Similarly, the following query uses the <code>INNER JOIN</code> with the <code>USING</code> syntax:</p>
+<pre><code class="lang-mysql">SELECT 
+    orderNumber,
+    status,
+    SUM(quantityOrdered * priceEach) total
+FROM
+    orders
+INNER JOIN orderdetails USING (orderNumber)
+GROUP BY orderNumber;
+</code></pre>
+<h3 id="mysql-inner-join-&#x2013;-join-three-tables-example">MySQL <code>INNER JOIN</code> &#x2013; join three tables example</h3>
+<p>See the following <code>products</code>, <code>orders</code> and <code>orderdetails</code> tables:</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/products-orders-orderdetails-tables.png" alt="img"></p>
+<p>This query uses two <code>INNER JOIN</code> clauses to join three tables: <code>orders</code>, <code>orderdetails</code>, and <code>products</code>:</p>
+<pre><code class="lang-mysql">SELECT 
+    orderNumber,
+    orderDate,
+    orderLineNumber,
+    productName,
+    quantityOrdered,
+    priceEach
+FROM
+    orders
+INNER JOIN
+    orderdetails USING (orderNumber)
+INNER JOIN
+    products USING (productCode)
+ORDER BY 
+    orderNumber, 
+    orderLineNumber;
+</code></pre>
+<p>This picture shows the partial output:</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/MySQL-Inner-Join-join-three-tables-example.png" alt="MySQL Inner Join - join three tables example"></p>
+<h3 id="mysql-inner-join-&#x2013;-join-four-tables-example">MySQL <code>INNER JOIN</code> &#x2013; join four tables example</h3>
+<p>See the following <code>orders</code>, <code>orderdetails</code>, <code>customers</code> and <code>products</code> tables:</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/orders-orderdetails-products-customers-tables.png" alt="orders orderdetails products customers tables"></p>
+<p>This example uses three <code>INNER JOIN</code> clauses to query data from the four tables above:</p>
+<pre><code class="lang-mysql">SELECT 
+    orderNumber,
+    orderDate,
+    customerName,
+    orderLineNumber,
+    productName,
+    quantityOrdered,
+    priceEach
+FROM
+    orders
+INNER JOIN orderdetails 
+    USING (orderNumber)
+INNER JOIN products 
+    USING (productCode)
+INNER JOIN customers 
+    USING (customerNumber)
+ORDER BY 
+    orderNumber, 
+    orderLineNumber;
+</code></pre>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2019/08/MySQL-Inner-Join-join-four-tables-example.png" alt="MySQL Inner Join - join four tables example"></p>
+<h2 id="mysql-inner-join-using-other-operators">MySQL <code>INNER JOIN</code> using other operators</h2>
+<p>So far, you have seen that the join condition used the equal operator (=) for matching rows.</p>
+<p>In addition to the equal operator (=), you can use other operators such as greater than ( <code>&gt;</code>), less than ( <code>&lt;</code>), and not-equal ( <code>&lt;&gt;</code>) operator to form the join condition.</p>
+<p>The following query uses a less-than ( <code>&lt;</code>) join to find sales price of the product whose code is <code>S10_1678</code>that is less than the manufacturer&#x2019;s suggested retail price (MSRP) for that product.</p>
+<pre><code class="lang-mysql">SELECT 
+    orderNumber, 
+    productName, 
+    msrp, 
+    priceEach
+FROM
+    products p
+INNER JOIN orderdetails o 
+   ON p.productcode = o.productcode
+      AND p.msrp &gt; o.priceEach
+WHERE
+    p.productcode = &apos;S10_1678&apos;;
+</code></pre>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-INNER-JOIN-not-equal-join-example.png" alt="MySQL INNER JOIN - not-equal join example"></p>
+<p>In this tutorial, you have learned how to use the MySQL <code>INNER JOIN</code> to query data from multiple tables.</p>
+<h2 id="related-tutorials">Related Tutorials</h2>
+<ul>
+<li><a href="INNER-JOIN.html">MySQL INNER JOIN</a></li>
+<li><a href="LEFT-JOIN.html">MySQL LEFT JOIN</a></li>
+<li><a href="RIGHT-JOIN.html">MySQL RIGHT JOIN</a></li>
+<li><a href="CROSS-JOIN.html">MySQL CROSS JOIN</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="JOIN.html" class="navigation navigation-prev " aria-label="Previous page: Joins">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="LEFT-JOIN.html" class="navigation navigation-next " aria-label="Next page: LEFT JOIN">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"INNER JOIN","level":"1.6.3","depth":2,"next":{"title":"LEFT JOIN","level":"1.6.4","depth":2,"path":"5/LEFT-JOIN.md","ref":"5/LEFT-JOIN.md","articles":[]},"previous":{"title":"Joins","level":"1.6.2","depth":2,"path":"5/JOIN.md","ref":"5/JOIN.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5/INNER-JOIN.md","mtime":"2019-09-16T06:44:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T07:45:44.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,771 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GROUP BY · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HAVING.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1/">
+            
+                <a href="../1/">
+            
+                    
+                    Section 1. Getting started with MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1/INSTALL.html">
+            
+                <a href="../1/INSTALL.html">
+            
+                    
+                    Installing MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1/SAMPLE-DATABASE.html">
+            
+                <a href="../1/SAMPLE-DATABASE.html">
+            
+                    
+                    Downloading sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1/LOAD-DATABASE.html">
+            
+                <a href="../1/LOAD-DATABASE.html">
+            
+                    
+                    Loading the sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2/">
+            
+                <a href="../2/">
+            
+                    
+                    Section 2. Querying data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2/MySQL-SELECT.html">
+            
+                <a href="../2/MySQL-SELECT.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3/">
+            
+                <a href="../3/">
+            
+                    
+                    Section 3. Sorting data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3/ORDER-BY.html">
+            
+                <a href="../3/ORDER-BY.html">
+            
+                    
+                    ORDER BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4/">
+            
+                <a href="../4/">
+            
+                    
+                    Section 4. Filtering data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4/WHERE.html">
+            
+                <a href="../4/WHERE.html">
+            
+                    
+                    WHERE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4/SELECT-DISTINCT.html">
+            
+                <a href="../4/SELECT-DISTINCT.html">
+            
+                    
+                    SELECT DISTINCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4/AND-Operator.html">
+            
+                <a href="../4/AND-Operator.html">
+            
+                    
+                    AND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4/OR-Operator.html">
+            
+                <a href="../4/OR-Operator.html">
+            
+                    
+                    OR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4/IN-Operator.html">
+            
+                <a href="../4/IN-Operator.html">
+            
+                    
+                    IN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4/BETWEEN.html">
+            
+                <a href="../4/BETWEEN.html">
+            
+                    
+                    BETWEEN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4/LIMIT.html">
+            
+                <a href="../4/LIMIT.html">
+            
+                    
+                    LIMIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../4/IS-NULL.html">
+            
+                <a href="../4/IS-NULL.html">
+            
+                    
+                    IS NULL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../5/">
+            
+                <a href="../5/">
+            
+                    
+                    Section 5. Joining tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../5/ALIAS.html">
+            
+                <a href="../5/ALIAS.html">
+            
+                    
+                    Table & Column Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../5/JOIN.html">
+            
+                <a href="../5/JOIN.html">
+            
+                    
+                    Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../5/INNER-JOIN.html">
+            
+                <a href="../5/INNER-JOIN.html">
+            
+                    
+                    INNER JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../5/LEFT-JOIN.html">
+            
+                <a href="../5/LEFT-JOIN.html">
+            
+                    
+                    LEFT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../5/RIGHT-JOIN.html">
+            
+                <a href="../5/RIGHT-JOIN.html">
+            
+                    
+                    RIGHT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../5/CROSS-JOIN.html">
+            
+                <a href="../5/CROSS-JOIN.html">
+            
+                    
+                    CROSS JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../5/SELF-JOIN.html">
+            
+                <a href="../5/SELF-JOIN.html">
+            
+                    
+                    SELF JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Section 6. Grouping data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="GROUP-BY.html">
+            
+                <a href="GROUP-BY.html">
+            
+                    
+                    GROUP BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="HAVING.html">
+            
+                <a href="HAVING.html">
+            
+                    
+                    HAVING
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="ROLLUP.html">
+            
+                <a href="ROLLUP.html">
+            
+                    
+                    ROLLUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GROUP BY</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mysql-group-by">MySQL GROUP BY</h1>
+<p><strong>Summary:</strong> in this tutorial, you will learn how to use <strong>MySQL GROUP BY</strong> to group rows into subgroups based on values of columns or expressions.</p>
+<h2 id="introduction-to-mysql-group-by-clause">Introduction to MySQL <code>GROUP BY</code> clause</h2>
+<p>The <code>GROUP BY</code> clause groups a set of rows into a set of summary rows by values of columns or expressions. The <code>GROUP BY</code> clause returns one row for each group. In other words, it reduces the number of rows in the result set.</p>
+<p>You often use the <code>GROUP BY</code> clause with <a href="http://www.mysqltutorial.org/mysql-aggregate-functions.aspx" target="_blank">aggregate functions</a> such as <code>SUM</code>, <code>AVG</code>, <code>MAX</code>, <code>MIN</code>, and <code>COUNT</code>. The aggregate function that appears in the <code>SELECT</code> clause provides information about each group.</p>
+<p>The <code>GROUP BY</code> clause is an optional clause of the <code>SELECT</code> statement. The following illustrates the <code>GROUP BY</code>clause syntax:</p>
+<pre><code class="lang-mysql">SELECT 
+    c1, c2,..., cn, aggregate_function(ci)
+FROM
+    table
+WHERE
+    where_conditions
+GROUP BY c1 , c2,...,cn;
+</code></pre>
+<p>The <code>GROUP BY</code> clause must appear after the <code>FROM</code> and <code>WHERE</code> clauses. Following the <code>GROUP BY</code> keywords is a list of comma-separated columns or expressions that you want to use as criteria to group rows.</p>
+<h2 id="mysql-group-by-examples">MySQL <code>GROUP BY</code> examples</h2>
+<p>Let&#x2019;s take some example of using the <code>GROUP BY</code> clause.</p>
+<h3 id="a-simple-mysql-group-by-example">A) Simple MySQL <code>GROUP BY</code> example</h3>
+<p>Let&#x2019;s take a look at the <code>orders</code> table in the <a href="http://www.mysqltutorial.org/mysql-sample-database.aspx" target="_blank">sample database</a>.</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2009/12/orders_table.png" alt="orders table"></p>
+<p>Suppose you want to group values of the order&#x2019;s status into subgroups, you use the <code>GROUP BY</code> clause with the <code>status</code> column as the following query:</p>
+<pre><code class="lang-mysql">SELECT 
+    status
+FROM
+    orders
+GROUP BY status;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#1" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-example.png" alt="MySQL GROUP BY example"></p>
+<p>As you can see, the <code>GROUP BY</code> clause returns unique occurrences of <code>status</code> values. It works like the <code>DISTINCT</code> operator as shown in the following query:</p>
+<pre><code class="lang-mysql">SELECT DISTINCT
+    status
+FROM
+    orders;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#2" target="_blank">Try It Out</a></p>
+<h3 id="b-using-mysql-group-bywith-aggregate-functions">B) Using MySQL <code>GROUP BY</code>with aggregate functions</h3>
+<p>The <a href="http://www.mysqltutorial.org/mysql-aggregate-functions.aspx" target="_blank">aggregate functions</a> allow you to perform the calculation of a set of rows and return a single value. The <code>GROUP BY</code> clause is often used with an aggregate function to perform calculation and return a single value for each subgroup.</p>
+<p>For example, if you want to know the number of orders in each status, you can use the <code>COUNT</code> function with the <code>GROUP BY</code> clause as follows:</p>
+<pre><code class="lang-mysql">SELECT 
+    status, COUNT(*)
+FROM
+    orders
+GROUP BY status;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#3" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-with-COUNT-function.png" alt="MySQL GROUP BY with COUNT function"></p>
+<p>See the following <code>orders</code> and  <code>orderdetails</code> table.</p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2009/12/orders_order_details_tables.png" alt="order-orderDetails-tables"></p>
+<p>To get the total amount of all orders by status, you <a href="http://www.mysqltutorial.org/mysql-inner-join.aspx" target="_blank">join </a>the <code>orders</code> table with the <code>orderdetails</code> table and use the <code>SUM</code> function to calculate the total amount. See the following query:</p>
+<pre><code class="lang-mysql">SELECT 
+    status, SUM(quantityOrdered * priceEach) AS amount
+FROM
+    orders
+        INNER JOIN
+    orderdetails USING (orderNumber)
+GROUP BY status;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#4" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-with-SUM-function.png" alt="MySQL GROUP BY with SUM function"></p>
+<p>Similarly, the following query returns the order numbers and the total amount of each order.</p>
+<pre><code class="lang-mysql">SELECT 
+    orderNumber,
+    SUM(quantityOrdered * priceEach) AS total
+FROM
+    orderdetails
+GROUP BY orderNumber;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#5" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-order-number-example.png" alt="MySQL GROUP BY order number example"></p>
+<h3 id="c-mysql-group-by-with-expression-example">C) MySQL <code>GROUP BY</code> with expression example</h3>
+<p>In addition to columns, you can group rows by expressions. The following query gets the total sales for each year.</p>
+<pre><code class="lang-mysql">SELECT 
+    YEAR(orderDate) AS year,
+    SUM(quantityOrdered * priceEach) AS total
+FROM
+    orders
+        INNER JOIN
+    orderdetails USING (orderNumber)
+WHERE
+    status = &apos;Shipped&apos;
+GROUP BY YEAR(orderDate);
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#6" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-expression-example.png" alt="MySQL GROUP BY expression example"></p>
+<p>In this example, we used the <code>YEAR</code> function to extract year data from order date ( <code>orderDate</code>). We included only orders with <code>shipped</code> status in the total sales. Note that the expression which appears in the <code>SELECT</code> clause must be the same as the one in the <code>GROUP BY</code> clause.</p>
+<h3 id="d-using-mysql-group-by-with-having-clause-example">D) Using MySQL <code>GROUP BY</code> with <code>HAVING</code> clause example</h3>
+<p>To filter the groups returned by <code>GROUP BY</code> clause, you use a  <a href="http://www.mysqltutorial.org/mysql-having.aspx" target="_blank"><code>HAVING</code></a> clause. The following query uses the <code>HAVING</code> clause to select the total sales of the years after 2003.</p>
+<pre><code class="lang-mysql">SELECT 
+    YEAR(orderDate) AS year,
+    SUM(quantityOrdered * priceEach) AS total
+FROM
+    orders
+        INNER JOIN
+    orderdetails USING (orderNumber)
+WHERE
+    status = &apos;Shipped&apos;
+GROUP BY year
+HAVING year &gt; 2003;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#7" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-with-HAVING-example.png" alt="MySQL GROUP BY with HAVING example"></p>
+<h2 id="the-group-by-clause-mysql-vs-standard-sql">The <code>GROUP BY</code> clause: MySQL vs. standard SQL</h2>
+<p>Standard SQL does not allow you to use an alias in the <code>GROUP BY</code> clause, however, MySQL supports this.</p>
+<p>For example, the following query extracts the year from the order date. It first uses <code>year</code> as an alias of the expression <code>YEAR(orderDate)</code> and then uses the <code>year</code> alias in the <code>GROUP BY</code> clause. This query is not valid in standard SQL.</p>
+<pre><code class="lang-mysql">SELECT 
+    YEAR(orderDate) AS year, COUNT(orderNumber)
+FROM
+    orders
+GROUP BY year;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#8" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-SQL-standard.png" alt="MySQL GROUP BY SQL standard"></p>
+<p>MySQL also allows you to sort the groups in ascending or descending orders while the standard SQL does not. The default order is ascending. For example, if you want to get the number of orders by status and sort the status in descending order, you can use the <code>GROUP BY</code> clause with <code>DESC</code> as the following query:</p>
+<pre><code class="lang-mysql">SELECT 
+    status, COUNT(*)
+FROM
+    orders
+GROUP BY status DESC;
+</code></pre>
+<p><a href="http://www.mysqltutorial.org/tryit/query/mysql-group-by/#9" target="_blank">Try It Out</a></p>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2011/05/MySQL-GROUP-BY-DESC-example.png" alt="MySQL GROUP BY DESC example"></p>
+<p>Notice that we used <code>DESC</code> in the <code>GROUP BY</code> clause to sort the <code>status</code> in descending order. We could also specify explicitly <code>ASC</code> in the <code>GROUP BY</code> clause to sort the groups by status in ascending order.</p>
+<p>In this tutorial, we have shown you how to use the MySQL <code>GROUP BY</code> clause to group rows into subgroups based on values of columns or expressions.</p>
+<h2 id="related-tutorials">Related Tutorials</h2>
+<ul>
+<li><a href="../2/SELECT.md">MySQL SELECT</a></li>
+<li><a href="GROUP-BY.html">MySQL HAVING</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Section 6. Grouping data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HAVING.html" class="navigation navigation-next " aria-label="Next page: HAVING">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GROUP BY","level":"1.7.1","depth":2,"next":{"title":"HAVING","level":"1.7.2","depth":2,"path":"6/HAVING.md","ref":"6/HAVING.md","articles":[]},"previous":{"title":"Section 6. Grouping data","level":"1.7","depth":1,"path":"6/README.md","ref":"6/README.md","articles":[{"title":"GROUP BY","level":"1.7.1","depth":2,"path":"6/GROUP-BY.md","ref":"6/GROUP-BY.md","articles":[]},{"title":"HAVING","level":"1.7.2","depth":2,"path":"6/HAVING.md","ref":"6/HAVING.md","articles":[]},{"title":"ROLLUP","level":"1.7.3","depth":2,"path":"6/ROLLUP.md","ref":"6/ROLLUP.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6/GROUP-BY.md","mtime":"2019-09-16T07:18:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T07:45:44.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

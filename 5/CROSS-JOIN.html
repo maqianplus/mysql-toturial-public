@@ -1,0 +1,775 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CROSS JOIN · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SELF-JOIN.html" />
+    
+    
+    <link rel="prev" href="RIGHT-JOIN.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1/">
+            
+                <a href="../1/">
+            
+                    
+                    Section 1. Getting started with MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1/INSTALL.html">
+            
+                <a href="../1/INSTALL.html">
+            
+                    
+                    Installing MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1/SAMPLE-DATABASE.html">
+            
+                <a href="../1/SAMPLE-DATABASE.html">
+            
+                    
+                    Downloading sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1/LOAD-DATABASE.html">
+            
+                <a href="../1/LOAD-DATABASE.html">
+            
+                    
+                    Loading the sample database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2/">
+            
+                <a href="../2/">
+            
+                    
+                    Section 2. Querying data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2/MySQL-SELECT.html">
+            
+                <a href="../2/MySQL-SELECT.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3/">
+            
+                <a href="../3/">
+            
+                    
+                    Section 3. Sorting data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3/ORDER-BY.html">
+            
+                <a href="../3/ORDER-BY.html">
+            
+                    
+                    ORDER BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../4/">
+            
+                <a href="../4/">
+            
+                    
+                    Section 4. Filtering data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../4/WHERE.html">
+            
+                <a href="../4/WHERE.html">
+            
+                    
+                    WHERE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../4/SELECT-DISTINCT.html">
+            
+                <a href="../4/SELECT-DISTINCT.html">
+            
+                    
+                    SELECT DISTINCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../4/AND-Operator.html">
+            
+                <a href="../4/AND-Operator.html">
+            
+                    
+                    AND
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../4/OR-Operator.html">
+            
+                <a href="../4/OR-Operator.html">
+            
+                    
+                    OR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../4/IN-Operator.html">
+            
+                <a href="../4/IN-Operator.html">
+            
+                    
+                    IN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../4/BETWEEN.html">
+            
+                <a href="../4/BETWEEN.html">
+            
+                    
+                    BETWEEN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../4/LIMIT.html">
+            
+                <a href="../4/LIMIT.html">
+            
+                    
+                    LIMIT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../4/IS-NULL.html">
+            
+                <a href="../4/IS-NULL.html">
+            
+                    
+                    IS NULL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Section 5. Joining tables
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="ALIAS.html">
+            
+                <a href="ALIAS.html">
+            
+                    
+                    Table & Column Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="JOIN.html">
+            
+                <a href="JOIN.html">
+            
+                    
+                    Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="INNER-JOIN.html">
+            
+                <a href="INNER-JOIN.html">
+            
+                    
+                    INNER JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="LEFT-JOIN.html">
+            
+                <a href="LEFT-JOIN.html">
+            
+                    
+                    LEFT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="RIGHT-JOIN.html">
+            
+                <a href="RIGHT-JOIN.html">
+            
+                    
+                    RIGHT JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.6" data-path="CROSS-JOIN.html">
+            
+                <a href="CROSS-JOIN.html">
+            
+                    
+                    CROSS JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="SELF-JOIN.html">
+            
+                <a href="SELF-JOIN.html">
+            
+                    
+                    SELF JOIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../6/">
+            
+                <a href="../6/">
+            
+                    
+                    Section 6. Grouping data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../6/GROUP-BY.html">
+            
+                <a href="../6/GROUP-BY.html">
+            
+                    
+                    GROUP BY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../6/HAVING.html">
+            
+                <a href="../6/HAVING.html">
+            
+                    
+                    HAVING
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../6/ROLLUP.html">
+            
+                <a href="../6/ROLLUP.html">
+            
+                    
+                    ROLLUP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CROSS JOIN</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mysql-cross-join">MySQL CROSS JOIN</h1>
+<p><strong>Summary</strong>: in this tutorial, you will learn about the MySQL <code>CROSS JOIN</code> clause and how to apply it to answer some interesting data questions.</p>
+<h2 id="introduction-to-mysql-cross-join-clause">Introduction to MySQL <code>CROSS JOIN</code> clause</h2>
+<p>The <code>CROSS JOIN</code> clause returns the Cartesian product of rows from the joined tables.</p>
+<p>Suppose you join two tables using the <code>CROSS JOIN</code> clause. The result set will include all rows from both tables, where each row is the combination of the row in the first table with the row in the second table. In general, if each table has <code>n</code> and <code>m</code> rows respectively, the result set will have <code>nxm</code> rows.</p>
+<p>The following illustrates the syntax of the <code>CROSS JOIN</code> clause that joins two tables <code>t1</code> and <code>t2</code>:</p>
+<pre><code class="lang-mysql">SELECT * FROM t1
+CROSS JOIN t2;
+</code></pre>
+<p>Note that different from the <a href="http://www.mysqltutorial.org/mysql-inner-join.aspx" target="_blank"><code>INNER JOIN</code></a>, <a href="http://www.mysqltutorial.org/mysql-left-join.aspx" target="_blank"><code>LEFT JOIN</code></a> , and <code>RIGHT JOIN</code> clauses, the <code>CROSS JOIN</code> clause does not have a join predicate. In other words, it does not have the <code>ON</code> or <code>USING</code> clause.</p>
+<p>If you add a <code>WHERE</code> clause, in case table <code>t1</code> and <code>t2</code> has a relationship, the <code>CROSS JOIN</code> works like the <code>INNER JOIN</code> clause as shown in the following query:</p>
+<pre><code class="lang-mysql">SELECT * FROM t1
+CROSS JOIN t2
+WHERE t1.id = t2.id;
+</code></pre>
+<h2 id="mysql-cross-join-clause-examples">MySQL <code>CROSS JOIN</code> clause examples</h2>
+<p>Let&#x2019;s set up some tables to demonstrate the <code>CROSS JOIN</code> clause.</p>
+<h3 id="setting-up-sample-tables">Setting up sample tables</h3>
+<p>First, create a new database <code>salesdb</code>:</p>
+<pre><code class="lang-mysql">CREATE DATABASE IF NOT EXISTS salesdb;
+</code></pre>
+<p>Second, switch the current data to the new database <code>testdb</code>:</p>
+<pre><code class="lang-mysql">USE testdb;
+</code></pre>
+<p>Third, create new tables in the <code>salesdb</code> database:</p>
+<pre><code class="lang-mysql">CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(100),
+    price DECIMAL(13,2 )
+);
+
+CREATE TABLE stores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    store_name VARCHAR(100)
+);
+
+CREATE TABLE sales (
+    product_id INT,
+    store_id INT,
+    quantity DECIMAL(13 , 2 ) NOT NULL,
+    sales_date DATE NOT NULL,
+    PRIMARY KEY (product_id , store_id),
+    FOREIGN KEY (product_id)
+        REFERENCES products (id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (store_id)
+        REFERENCES stores (id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
+</code></pre>
+<p>Here are the descriptions of the three tables:</p>
+<ul>
+<li>The table  <code>products</code> contains the products master data that includes product id, product name, and sales price.</li>
+<li>The table <code>stores</code> contains the stores where the products are sold.</li>
+<li>The table <code>sales</code> contains the products that sold in a particular store by quantity and date.</li>
+</ul>
+<p>Finally, insert data into the three tables. Suppose that we have three products <code>iPhone</code>, <code>iPad</code> and <code>Macbook Pro</code> which are sold in two stores <code>North</code> and <code>South</code>.</p>
+<pre><code class="lang-mysql">INSERT INTO products(product_name, price)
+VALUES(&apos;iPhone&apos;, 699),
+      (&apos;iPad&apos;,599),
+      (&apos;Macbook Pro&apos;,1299);
+
+INSERT INTO stores(store_name)
+VALUES(&apos;North&apos;),
+      (&apos;South&apos;);
+
+INSERT INTO sales(store_id,product_id,quantity,sales_date)
+VALUES(1,1,20,&apos;2017-01-02&apos;),
+      (1,2,15,&apos;2017-01-05&apos;),
+      (1,3,25,&apos;2017-01-05&apos;),
+      (2,1,30,&apos;2017-01-02&apos;),
+      (2,2,35,&apos;2017-01-05&apos;);
+</code></pre>
+<h3 id="mysql-cross-join-example">MySQL <code>CROSS JOIN</code> example</h3>
+<p>This statement returns total sales for each store and product, you calculate the sales and <a href="http://www.mysqltutorial.org/mysql-group-by.aspx" target="_blank">group </a>them by store and product as follows:</p>
+<pre><code class="lang-mysql">SELECT 
+    store_name,
+    product_name,
+    SUM(quantity * price) AS revenue
+FROM
+    sales
+        INNER JOIN
+    products ON products.id = sales.product_id
+        INNER JOIN
+    stores ON stores.id = sales.store_id
+GROUP BY store_name , product_name;
+</code></pre>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2017/02/MySQL-CROSS-JOIN-GROUP-BY-example.png" alt="MySQL CROSS JOIN GROUP BY example"></p>
+<p>Now, what if you want to know also which store had no sales of a specific product. The query above could not answer this question.</p>
+<p>To solve the problem, you need to use the <code>CROSS JOIN</code> clause.</p>
+<p>First, use the <code>CROSS JOIN</code> clause to get the combination of all stores and products:</p>
+<pre><code class="lang-mysql">SELECT 
+    store_name, product_name
+FROM
+    stores AS a
+        CROSS JOIN
+    products AS b;
+</code></pre>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2017/02/MySQL-CROSS-JOIN-stores-and-products.png" alt="MySQL CROSS JOIN stores and products"></p>
+<p>Next, join the result of the query above with a query that returns the total of sales by store and product. The following query illustrates the idea:</p>
+<pre><code class="lang-mysql">SELECT 
+    b.store_name,
+    a.product_name,
+    IFNULL(c.revenue, 0) AS revenue
+FROM
+    products AS a
+        CROSS JOIN
+    stores AS b
+        LEFT JOIN
+    (SELECT 
+        stores.id AS store_id,
+        products.id AS product_id,
+        store_name,
+            product_name,
+            ROUND(SUM(quantity * price), 0) AS revenue
+    FROM
+        sales
+    INNER JOIN products ON products.id = sales.product_id
+    INNER JOIN stores ON stores.id = sales.store_id
+    GROUP BY store_name , product_name) AS c ON c.store_id = b.id
+        AND c.product_id= a.id
+ORDER BY b.store_name;
+</code></pre>
+<p><img src="http://www.mysqltutorial.org/wp-content/uploads/2017/02/MySQL-CROSS-JOIN-query-example.png" alt="MySQL CROSS JOIN query example"></p>
+<p>Note that the query used the <a href="http://www.mysqltutorial.org/mysql-ifnull/" target="_blank"><code>IFNULL</code></a> function to return 0 if the revenue is <code>NULL</code> (in case the store had no sales).</p>
+<p>By using the <code>CROSS JOIN</code> clause this way, you can answer a wide range of questions e.g., find the sales revenue by salesman, month even if the salesman has no sales in a particular month.</p>
+<h2 id="related-tutorials">Related Tutorials</h2>
+<ul>
+<li><a href="INNER-JOIN.html">MySQL INNER JOIN</a></li>
+<li><a href="LEFT-JOIN.html">MySQL LEFT JOIN</a></li>
+<li><a href="RIGHT-JOIN.html">MySQL RIGHT JOIN</a></li>
+<li><a href="CROSS-JOIN.html">MySQL CROSS JOIN</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="RIGHT-JOIN.html" class="navigation navigation-prev " aria-label="Previous page: RIGHT JOIN">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SELF-JOIN.html" class="navigation navigation-next " aria-label="Next page: SELF JOIN">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CROSS JOIN","level":"1.6.6","depth":2,"next":{"title":"SELF JOIN","level":"1.6.7","depth":2,"path":"5/SELF-JOIN.md","ref":"5/SELF-JOIN.md","articles":[]},"previous":{"title":"RIGHT JOIN","level":"1.6.5","depth":2,"path":"5/RIGHT-JOIN.md","ref":"5/RIGHT-JOIN.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5/CROSS-JOIN.md","mtime":"2019-09-16T06:44:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T07:45:44.445Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
